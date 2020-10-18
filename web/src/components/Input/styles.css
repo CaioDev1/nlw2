@@ -1,0 +1,39 @@
+input {
+    height: 5.5rem;
+    border-radius: 0.5rem;
+    border: 0;
+    padding: 0 2rem;
+    outline: 0;
+    width: 100%;
+    margin-top: 1rem;
+    border: 1px solid var(--color-background);
+}
+
+.filter {
+    width: 100%;
+}
+
+.input-block {
+    margin-top: 1rem;
+    position: relative;
+}
+
+.input-block label {
+    display: block;
+    color: var(--color-text-in-primary);
+}
+
+.input-block:focus-within::after {
+    content: '';
+    background: var(--color-primary-light);
+    position: absolute;
+    left: 2rem;
+    right: 2rem;
+    bottom: 0;
+    height: 2px;
+    width: 100% - 3.2rem;
+}
+
+fieldset > .input-block > label {
+    color: var(--color-text-base);
+}

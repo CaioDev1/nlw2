@@ -1,0 +1,142 @@
+#teacher-form {
+    height: 100vh;
+}
+
+#page-header-content p {
+    color: var(--color-text-in-primary);
+    margin-top: 2rem;
+    max-width: 450px;
+}
+
+#page-teacher-content {
+    width: 100vw;
+    padding: 2rem;
+}
+
+main {
+    max-width: 70rem;
+    margin: 0 auto;
+    background-color: var(--color-box-base);
+    position: relative;
+    width: 100vw;
+    top: -3rem;
+    border-radius: 0.8rem;
+    padding-top: 5rem;
+}
+
+fieldset {
+    border: 0;
+    margin-top: 3rem;
+    padding: 0 4rem;
+    color: var(--color-text-complement);
+}
+
+fieldset:first-child {
+    margin-top: 0;
+}
+
+legend {
+    width: 100%;
+    font-size: 2.5rem;
+    color: black;
+    font-weight: bold;
+    font-family: Archivo;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--color-background);
+    display: flex;
+    justify-content: space-between;
+}
+
+legend button {
+    background: transparent;
+    outline: 0;
+    color: var(--color-primary);
+    font-family: Archivo;
+    font-weight: bold;
+    font-size: 1.6rem;
+    border: 0;
+    cursor: pointer;
+}
+
+input, select {
+    background-color: var(--color-input-background);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--color-background);
+    margin-top: 5rem;
+    background: var(--color-box-footer);
+    padding: 4rem;
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+footer img {
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+footer .submit-button {
+    background-color: var(--color-secundary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5.5rem;
+    width: 100%;
+    border-radius: 0.8rem;
+    color: var(--color-button-text);
+    font-family: Poppins;
+    font-size: 1.8rem;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+
+@media(min-width: 700px) {
+    .schedule-block {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'week_day from to';
+        column-gap: 2rem;
+    }
+
+    .input-block > select {
+        grid-area: week_day;
+    }
+
+    .input-block > #from {
+        grid-area: from;
+    }
+
+    .input-block > #to {
+        grid-area: to;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer .submit-button {
+        width: 25rem;
+    }
+
+    fieldset {
+        padding: 0 6.4rem;
+    }
+}

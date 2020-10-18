@@ -1,0 +1,108 @@
+.teacher-item {
+    max-width: 73rem;
+    min-width: 300px;
+    margin: 0 auto 3rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid var(--color-line-in-white);
+    position: relative;
+    top: -7rem;
+}
+
+.teacher-item-header {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+.teacher-item-header img {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+}
+
+.teacher-item-header-info {
+    margin-left: 2rem;
+}
+
+.teacher-item-header-info p {
+    font-family: Archivo;
+    font-size: 2.5rem;
+    color: var(--color-text-title);
+}
+
+.teacher-item-header-info span {
+    font-size: 1.4rem;
+}
+
+.teacher-item > p {
+    padding: 2rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    font-family: Poppins;
+}
+
+.teacher-item-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border-top: 1px solid var(--color-background);
+    background: var(--color-box-footer);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.teacher-item-footer p {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.teacher-item-footer span {
+    color: var(--color-primary);
+    font-size: 2rem;
+    font-family: Archivo;
+    margin-left: 1rem;
+}
+
+.teacher-item-footer a {
+    background-color: var(--color-secundary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5.5rem;
+    width: 100%;
+    border-radius: 0.8rem;
+    color: var(--color-button-text);
+    font-family: Poppins;
+    font-size: 1.6rem;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+.teacher-item-footer a img {
+    margin-right: 1rem;
+}
+
+
+@media(min-width: 700px) {
+    .teacher-item {
+        top: 0;
+    }
+    
+    .teacher-item-footer {
+        flex-direction: row;
+        padding: 2rem 3rem;
+    }
+
+    .teacher-item-footer a {
+        height: 5.5rem;
+        width: 25rem;
+        font-size: 1.6rem;
+        margin: 0;
+    }
+}

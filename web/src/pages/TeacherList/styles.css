@@ -1,0 +1,54 @@
+#teacher-list {
+    height: 100vh;
+}
+
+#page-header-content {
+    height: 80%;
+}
+
+.filter {
+    position: relative;
+}
+
+.submit-button {
+    background-color: var(--color-secundary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5.5rem;
+    width: 100%;
+    border-radius: 0.8rem;
+    color: var(--color-button-text);
+    font-family: Poppins;
+    font-size: 1.8rem;
+    border: 0;
+    margin-top: 3rem;
+    outline: 0;
+    cursor: pointer;
+}
+
+
+@media(min-width: 700px) {
+    .filter {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        column-gap: 2rem;
+        position: relative;
+        bottom: -5.5rem;
+    }
+
+    .submit-button {
+        margin-top: auto;
+    }
+}
+
+.teacher-list-area {
+    width: 100vw;
+    padding: 5rem 2rem;
+}
+
+
+@media(min-width: 700px) {
+
+}

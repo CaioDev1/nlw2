@@ -1,0 +1,40 @@
+select {
+    height: 5.5rem;
+    border-radius: 0.5rem;
+    border: 0;
+    padding: 0 2rem;
+    outline: 0;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    font-family: Poppins;
+}
+
+.filter {
+    width: 100%;
+}
+
+.select-block {
+    margin-top: 1rem;
+    position: relative;
+}
+
+.select-block label {
+    display: block;
+    color: var(--color-text-in-primary);
+}
+
+.select-block:focus-within::after {
+    content: '';
+    background: var(--color-primary-light);
+    position: absolute;
+    left: 2rem;
+    right: 2rem;
+    bottom: 0;
+    height: 2px;
+    width: 100% - 3.2rem;
+}
+
+fieldset > .select-block > label {
+    color: var(--color-text-base);
+}

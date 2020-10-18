@@ -1,0 +1,171 @@
+#page-landing {
+    min-width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--color-text-in-primary);
+    background: var(--color-primary);
+}
+
+#page-landing-content {
+    min-width: 300px;
+}
+
+.BrandTitle {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.BrandTitle img {
+    height: 8rem;
+}
+
+.BrandTitle h2 {
+    font-weight: 400;
+    line-height: 4rem;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+#page-landing-content > h2 {
+    text-align: left;
+    font-size: 2rem;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+#page-landing-content > h2 span {
+    color: var(--color-title-in-primary);
+}
+
+.LandingButtons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.LandingButtons a:first-child {
+    margin-right: 3rem;
+}
+
+
+#GiveClassesButton {
+    background-color: var(--color-secundary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+    min-width: 14rem;
+    width: 100%;
+    border-radius: 0.8rem;
+    color: var(--color-button-text);
+    text-decoration: none;
+    font-family: Archivo;
+    font-size: 2rem;
+}
+
+#StudyButton {
+    background-color: var(--color-primary-lighter);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+    min-width: 14rem;
+    width: 100%;
+    border-radius: 0.8rem;
+    color: var(--color-button-text);
+    text-decoration: none;
+    font-family: Archivo;
+    font-size: 2rem;
+}
+
+#StudyButton:hover {
+    background-color: var(--color-primary-light);
+}
+
+#GiveClassesButton:hover {
+    background-color: var(--color-secundary-dark);
+}
+
+#StudyButton img, #GiveClassesButton img {
+    margin-bottom: 2.5rem;
+}
+
+.TotalConnections {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+
+.TotalConnections img {
+    margin-left: 1rem;
+}
+
+@media(min-width: 1100px) {
+    #page-landing-content {
+        max-width: 1100px;
+
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 350px 130px 1fr;
+        grid-template-areas: 
+        'logo image image'
+        'text text text'
+        'buttons buttons span'
+        ;
+    }
+
+    .BrandTitle {
+        grid-area: logo;
+        text-align: left;
+        align-self: center;
+        margin: 0;
+    }
+
+    .BrandTitle img {
+        height: 100%;
+    }
+
+    .BrandTitle h2 {
+        font-size: 3rem;
+    }
+
+    .hero-image {
+        grid-area: image;
+        justify-content: end;
+        align-self: center;
+    }
+
+    #page-landing-content > h2 {
+        grid-area: text;
+        font-size: 3.5rem;
+    }
+
+    .LandingButtons {
+        grid-area: buttons;
+    }
+
+    #StudyButton, #GiveClassesButton {
+        height: 12rem;
+    }
+
+    .TotalConnections {
+        grid-area: span;
+        margin: 0;
+        align-self: center;
+        text-align: right;
+        font-size: 1.5rem;
+        padding-left: 1rem;
+    }
+}
